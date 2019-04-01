@@ -1,0 +1,120 @@
+:root {
+    --main-dark-color: #392F5A;
+    --white-color: #ffffff;
+    --violet-color: #9E0059;
+    --grey-color: #ADA8B6;
+    --pink-color: #F397D6;
+}
+
+.navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background: rgb(107,15,111);
+    background: linear-gradient(9deg, rgba(107,15,111,1) 0%, rgba(2,39,80,1) 100%);
+    justify-content: space-around;
+    align-items: center; 
+  }
+  
+  .navigation--links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navigation--logo {
+    max-width: 100%;
+    height: 100px;
+  }
+  
+  .link-wrapper {
+    padding: 0 16px;
+    font-size: 1.25em;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .link:hover{
+    color: #861575;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .menu {
+    display: none;
+    position: relative;
+    z-index: 1;
+    margin-right: 16px;
+  } 
+  
+  .menu--toggle {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  .menu--hamburger-bar {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: #cdcdcd;
+    z-index: 1;
+  }
+  
+  .navigation--hidden-menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px -50px 0  0;
+    padding: 50px;
+    background: #861575;
+    list-style: none;
+    left: 49px;
+    top:162px;
+    transform: translate(0%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  .navigation--hidden-menu .navigation--link {
+    margin: 8px;
+    transition: 0.3s ease;
+    text-align: center;
+    border: 3px solid transparent;
+  }
+  
+  .navigation--hidden-menu .navigation--link:hover {
+    margin: 8px;
+    cursor: pointer;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+  }
+  
+  .menu input:checked ~ .navigation--hidden-menu {
+    transform: translate(-100%, 0)
+  }
+  
+  @media screen and (max-width: 880px){
+    .navigation {
+      justify-content: space-between;
+    }
+  
+    .navigation--links {
+      display: none;
+    }
+  
+    .menu {
+      display: block;
+    }
+  }
+
