@@ -1,0 +1,22 @@
+#392F5A
+FF206E
+#9E0059
+#ADA8B6
+#F397D6
+
+:root {
+    --main-dark-color: #392F5A;
+    --white-color: #FF206E;
+    --violet-color: #9E0059;
+    --grey-color: #ADA8B6;
+    --pink-color: #F397D6;
+}
+
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+
+html, body, ul, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
