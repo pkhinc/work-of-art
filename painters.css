@@ -1,0 +1,52 @@
+.painters {
+    background-color: white;
+    padding: 75px 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font: bold 32px 'Open Sans',sans-serif;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 4px white solid;
+    width: max-content; 
+  }  
+
+  .painters--list-item h4 {
+    margin-bottom: 48px;
+  }
+  
+  .painters--card {
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: block;
+    background-color: #F397D6;
+    width: 100%;
+    text-align: center;
+    padding: 32px 16px;
+    box-shadow: -9px 10px 43px 0px rgba(0,0,0,0.75);
+  }
+  
+  .painters--carousel {
+    display: block;
+    list-style: none;
+  }
+  
+  .painters--list-item img {
+    box-shadow: -9px 10px 43px 0px rgba(0,0,0,0.75);
+    border-image: 10px black;
+   }
+  
+  @media screen and (max-width: 720px) {
+    .painters--carousel {
+      flex-direction: column;
+    }
+  }
